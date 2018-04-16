@@ -30,11 +30,12 @@
           </div>
           <div class="higher-lower-rows">
             Higher or Lower: <input type='text' value="N/A" disabled id="higher-or-lower"></input>
+            Difference: <input type="text" value="N/A" disabled id="difference"></input>
           </div>
           <div class="higher-lower-rows">
             <button onclick="generateNumber()" class="higher-lower-button higher-lower-button-generate">Generate Number</button>
-            <button onclick="submitGuess()" class="higher-lower-button higher-lower-button-submit">Submit Guess</button>
-            <button class="higher-lower-button higher-lower-button-reset">Reset Game</button>
+            <button onclick="submitGuess()" class="higher-lower-button higher-lower-button-disabled" disabled id="submit-guess">Submit Guess</button>
+            <button onclick="resetGame()" class="higher-lower-button higher-lower-button-disabled" disabled id="reset-game">Reset Game</button>
           </div>
         </div>
       </div>
