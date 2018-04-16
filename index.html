@@ -3,11 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Higher Or Lower</title>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
     <script src="index.js"></script>
   </head>
   <body>
     <div class="main-container">
-      <h2>This is the game of Higher or Lower. The goal is to guess the right number!</h2>
+      <div class="higher-lower-container">
+        <div class="higher-lower-header">
+          <h2>Higher Or Lower</h2>
+        </div>
+        <div class="higher-lower-content">
+          <h3>Your goal in Higher Or Lower is to guess the number that the computer
+          has generated! The number will be between 1 and 100. You will get hints whether to guess higher or lower.</h3>
+          <button onclick="generateNumber()">Generate Number!</button>
+          Mystery Number: <input type="text" value="N/A" disabled id="mystery-number"></input>
+          Your Guess: <input type="text"></input>
+          <button onclick="submitGuess()">Submit Guess</button>
+          Last Guess: <input type="text" value="N/A"></input>
+          <button>Reset Game</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,3 +1,28 @@
+body {
+  margin: 0;
+}
 .main-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.higher-lower-container {
+  width: 450px;
+  height: 400px;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.higher-lower-header {
+  background-color: white;
+  height: 25%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.higher-lower-content {
+  height: 75%;
 }
