@@ -23,7 +23,14 @@ function submitGuess() {
 
 function determineHigherLower(number) {
   var difference = randomNumber - number;
-  console.log('This is the difference', difference)
-  console.log('This is the random number', randomNumber)
-  console.log('This is the number', number)
+  var higherOrLower = document.getElementById('higher-or-lower');
+  var lastGuess = document.getElementById('last-guess');
+  if(difference <= -1) {
+    higherOrLower.value = 'Lower!';
+  }
+  else if(difference >= 1)
+  {
+    higherOrLower.value = 'Higher!';
+  }
+  lastGuess.value = number;
 }

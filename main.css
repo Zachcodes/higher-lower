@@ -24,5 +24,30 @@ body {
   align-items: center;
 }
 .higher-lower-content {
+  display: flex;
+  flex-direction: column;
   height: 75%;
+  padding: 10px;
+}
+.higher-lower-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.higher-lower-button {
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px;
+}
+.higher-lower-button-generate {
+  background-color: #19af19;
+}
+.higher-lower-button-submit {
+  background-color: #1900ff;
+}
+.higher-lower-button-reset {
+  background-color: #ff4400;
 }

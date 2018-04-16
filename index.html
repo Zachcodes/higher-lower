@@ -13,14 +13,29 @@
           <h2>Higher Or Lower</h2>
         </div>
         <div class="higher-lower-content">
-          <h3>Your goal in Higher Or Lower is to guess the number that the computer
-          has generated! The number will be between 1 and 100. You will get hints whether to guess higher or lower.</h3>
-          <button onclick="generateNumber()">Generate Number!</button>
-          Mystery Number: <input type="text" value="N/A" disabled id="mystery-number"></input>
-          Your Guess: <input type="text" id="guess-number"></input>
-          <button onclick="submitGuess()">Submit Guess</button>
-          Last Guess: <input type="text" value="N/A"></input>
-          <button>Reset Game</button>
+          <div class="higher-lower-rows">
+            <h3>Your goal in Higher Or Lower is to guess the number that the computer
+              has generated! The number will be between 1 and 100. You will get hints whether to guess higher or lower.</h3>
+          </div>
+          <div class="higher-lower-rows">
+            Mystery Number: <input type="text" value="N/A" disabled id="mystery-number"></input>
+          </div>
+          <div class="higher-lower-rows">
+            Your Guess: <input type="text" id="guess-number"></input>
+          </div>
+          <div class="higher-lower-rows">
+          </div>
+          <div class="higher-lower-rows">
+            Last Guess: <input type="text" value="N/A" disabled id="last-guess"></input>
+          </div>
+          <div class="higher-lower-rows">
+            Higher or Lower: <input type='text' value="N/A" disabled id="higher-or-lower"></input>
+          </div>
+          <div class="higher-lower-rows">
+            <button onclick="generateNumber()" class="higher-lower-button higher-lower-button-generate">Generate Number</button>
+            <button onclick="submitGuess()" class="higher-lower-button higher-lower-button-submit">Submit Guess</button>
+            <button class="higher-lower-button higher-lower-button-reset">Reset Game</button>
+          </div>
         </div>
       </div>
     </div>
